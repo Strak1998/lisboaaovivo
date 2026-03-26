@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="pt-PT" style="color-scheme: dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lisboa Despida — conte&uacute;do adulto premium com est&eacute;tica editorial, pagamento discreto e acesso imediato. Portugal, Brasil e Europa."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#09090b" />
+    <meta property="og:title" content="Lisboa Despida | Conte&uacute;do adulto premium e discreto" />
+    <meta property="og:description" content="Conte&uacute;do adulto premium com est&eacute;tica editorial e acesso discreto." />
+    <meta property="og:type" content="website" />
+    <title>Lisboa Despida | Conte&uacute;do adulto premium e discreto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- 3D WebGL Background -->
+    <canvas id="webglCanvas" aria-hidden="true"></canvas>
+    <a class="skip-link" href="#top">Saltar para conte&uacute;do principal</a>
+
+    <!-- ========== AGE GATE ========== -->
+    <div class="age-gate" id="ageGate">
+      <div class="age-gate-backdrop"></div>
+      <div class="age-gate-card">
+        <div class="age-gate-brand">
+          <span class="brand-mark">LD</span>
+        </div>
+        <h2>Lisboa Despida</h2>
+        <p>Conte&uacute;do exclusivo para adultos.<br>Confirma que tens pelo menos 18 anos.</p>
+        <div class="age-gate-actions">
+          <button class="button button-primary age-gate-enter" id="ageEnter">Tenho 18+ &mdash; Entrar</button>
+          <button class="button button-ghost age-gate-leave" id="ageLeave">Sair</button>
+        </div>
+        <small>Ao entrar, aceitas os nossos <a href="#">Termos</a> e <a href="#">Pol&iacute;tica de Privacidade</a>.</small>
+      </div>
+    </div>
+
+    <!-- ========== MAIN SITE ========== -->
+    <div class="page-shell" id="pageSite">
+      <div class="cursor-glow" aria-hidden="true"></div>
+      <div class="particles" aria-hidden="true"></div>
+      <div class="ambient ambient-top" aria-hidden="true"></div>
+      <div class="ambient ambient-side" aria-hidden="true"></div>
+      <div class="ambient ambient-bottom" aria-hidden="true"></div>
+
+      <!-- ========== HEADER ========== -->
+      <header class="site-header panel reveal">
+        <a class="brand" href="#top" aria-label="Lisboa Despida home">
+          <span class="brand-mark">LD</span>
+          <span class="brand-copy">
+            <strong>Lisboa Despida</strong>
+            <small>Adulto 18+ &bull; Editorial premium &bull; Acesso discreto</small>
+          </span>
+        </a>
+
+        <nav class="site-nav" id="siteNav" aria-label="Navegacao principal">
+          <a href="#cidades">Cidades</a>
+          <a href="#modelos">Modelos</a>
+          <a href="#colecoes">Cole&ccedil;&otilde;es</a>
+          <a href="#packs">Packs</a>
+          <a href="#membership">Membership</a>
+          <a href="#mercados">Mercados</a>
+        </nav>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">&#9776;</button>
+
+        <div class="header-actions">
+          <a class="button button-gold-outline" href="#membership">
+            <span class="live-dot"></span> Pagamento discreto
+          </a>
+          <a class="button button-primary" href="#membership">Ser membro</a>
+        </div>
+      </header>
+
+      <!-- ========== URGENCY BAR ========== -->
+      <div class="urgency-bar reveal">
+        <div class="urgency-bar-inner">
+          <span class="live-dot"></span>
+          <span><strong>Portugal, Brasil e Europa</strong> com entrada imediata</span>
+          <span class="urgency-sep">&bull;</span>
+          <span><strong>Packs desde 9.90&euro;</strong> para entrar sem compromisso</span>
+          <span class="urgency-sep">&bull;</span>
+          <span>Assinatura premium <strong>sem fideliza&ccedil;&atilde;o</strong></span>
+        </div>
+      </div>
+
+      <main id="top">
+        <!-- ========== HERO ========== -->
+        <section class="hero">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Adulto premium &bull; 18+ &bull; PT, BR e Europa</p>
+            <h1>Entrar pelo desejo. Ficar pela qualidade.</h1>
+            <p class="hero-text">
+              Conte&uacute;do adulto premium para quem valoriza discri&ccedil;&atilde;o,
+              est&eacute;tica e acesso aut&ecirc;ntico. Lisboa d&aacute; o cen&aacute;rio; a experi&ecirc;ncia
+              foi desenhada para convencer antes de pedires o cart&atilde;o.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary button-lg" href="#membership">
+                Ver planos premium
+                <span class="button-badge">-40% Founding</span>
+              </a>
+              <a class="button button-secondary button-lg" href="#colecoes">Explorar cole&ccedil;&otilde;es</a>
+            </div>
+
+            <!-- SOCIAL PROOF -->
+            <div class="social-proof">
+              <div class="social-proof-avatars" aria-hidden="true">
+                <div class="avatar-stack">
+                  <span class="avatar" style="background: linear-gradient(135deg, #d2a45f, #6f1830);">J</span>
+                  <span class="avatar" style="background: linear-gradient(135deg, #a24f67, #182033);">M</span>
+                  <span class="avatar" style="background: linear-gradient(135deg, #182033, #d2a45f);">R</span>
+                  <span class="avatar" style="background: linear-gradient(135deg, #6f1830, #d2a45f);">P</span>
+                  <span class="avatar avatar-more">+2.4k</span>
+                </div>
+              </div>
+              <div class="social-proof-text">
+                <div class="social-proof-stars" aria-hidden="true">&starf;&starf;&starf;&starf;&starf;</div>
+                <span class="sr-only">Classificação: 5 estrelas</span>
+                <p><strong>2,487 membros</strong> &bull; 4.9/5 satisfa&ccedil;&atilde;o</p>
+              </div>
+            </div>
+
+            <ul class="hero-facts">
+              <li>
+                <strong class="hero-fact-number" data-target="847">0</strong>
+                <span>Fotos exclusivas</span>
+              </li>
+              <li>
+                <strong class="hero-fact-number" data-target="12">0</strong>
+                <span>Modelos Lisboa</span>
+              </li>
+              <li>
+                <strong class="hero-fact-number" data-target="24">0</strong>
+                <span>h acesso privado</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-stage reveal">
+            <div class="carousel hero-carousel">
+              <div class="carousel-track">
+                <div class="carousel-slide active">
+                  <img src="images/janise-01.jpg" alt="Janise - Lisboa Despida 01" width="600" height="800" fetchpriority="high" />
+                </div>
+                <div class="carousel-slide">
+                  <img src="images/janise-02.jpg" alt="Janise - Lisboa Despida 02" width="600" height="800" loading="lazy" />
+                </div>
+                <div class="carousel-slide">
+                  <img src="images/janise-03.jpg" alt="Janise - Lisboa Despida 03" width="600" height="800" loading="lazy" />
+                </div>
+                <div class="carousel-slide">
+                  <img src="images/janise-04.jpg" alt="Janise - Lisboa Despida 04" width="600" height="800" loading="lazy" />
+                </div>
+                <div class="carousel-slide">
+                  <img src="images/janise-05.jpg" alt="Janise - Lisboa Despida 05" width="600" height="800" loading="lazy" />
+                </div>
+              </div>
+
+              <div class="carousel-overlay">
+                <span class="pill pill-live"><span class="live-dot"></span> Em destaque</span>
+                <h3>Janise</h3>
+                <p>23 anos &bull; Lisboa &bull; 127 fotos exclusivas</p>
+              </div>
+
+              <button class="carousel-btn carousel-prev" aria-label="Anterior">&larr;</button>
+              <button class="carousel-btn carousel-next" aria-label="Seguinte">&rarr;</button>
+
+              <div class="carousel-dots"></div>
+              <div class="carousel-counter"><span class="carousel-current">01</span> / <span class="carousel-total">05</span></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== TRUST BAR ========== -->
+        <section class="trust-bar reveal">
+          <div class="trust-items">
+            <div class="trust-item">
+              <span class="trust-icon trust-icon-svg"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></span>
+              <span>Checkout discreto</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon trust-icon-svg"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+              <span>Privacidade real</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon trust-icon-svg"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>
+              <span>Acesso imediato</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon trust-icon-svg"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></span>
+              <span>MB Way, cart&atilde;o e crypto</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon trust-icon-svg"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></span>
+              <span>Dispon&iacute;vel em PT, BR e UE</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="personas">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Como entrar</p>
+            <h2>Tr&ecirc;s formas de viver a experi&ecirc;ncia.</h2>
+            <p class="section-sub">
+              Escolhe o caminho que faz mais sentido para ti: experimenta sem compromisso,
+              mant&eacute;m o acesso recorrente ou entra no c&iacute;rculo mais exclusivo.
+            </p>
+          </div>
+
+          <div class="persona-grid">
+            <article class="persona-card panel reveal">
+              <span class="pill">Sem compromisso</span>
+              <h3>Packs avulso</h3>
+              <p>
+                Experimenta primeiro com um pack de entrada. Conte&uacute;do curado,
+                acesso imediato e a liberdade de decidir o pr&oacute;ximo passo ao teu ritmo.
+              </p>
+            </article>
+
+            <article class="persona-card panel reveal">
+              <span class="pill">Recorrente</span>
+              <h3>Membro discreto</h3>
+              <p>
+                Acesso mensal a todo o conte&uacute;do, com privacidade total
+                e zero complica&ccedil;&atilde;o. Cancela quando quiseres.
+              </p>
+            </article>
+
+            <article class="persona-card panel reveal">
+              <span class="pill">Exclusivo</span>
+              <h3>Acesso VIP</h3>
+              <p>
+                Conte&uacute;do personalizado, eventos privados e tratamento dedicado.
+                Para quem valoriza raridade e prioridade acima de tudo.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="cidades" class="city-strategy">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Cidades</p>
+            <h2>Onde o desejo encontra identidade local.</h2>
+            <p class="section-sub">
+              Conte&uacute;do pensado para cada cidade, com narrativa pr&oacute;xima,
+              pagamento local e uma est&eacute;tica que faz sentido onde est&aacute;s.
+            </p>
+          </div>
+
+          <div class="city-grid">
+            <article class="city-card panel reveal">
+              <div class="city-card-head">
+                <span class="market-tag">Portugal</span>
+                <span class="city-tier">Sede</span>
+              </div>
+              <h3>Lisboa</h3>
+              <p>O ber&ccedil;o da marca. Identidade editorial forte, tom sofisticado e discreto.</p>
+              <ul class="city-points">
+                <li>Experi&ecirc;ncia premium com MB Way e cart&atilde;o</li>
+                <li>Tom discreto, sofisticado e local</li>
+                <li>Ideal para acesso recorrente</li>
+              </ul>
+            </article>
+
+            <article class="city-card panel reveal">
+              <div class="city-card-head">
+                <span class="market-tag">Portugal</span>
+                <span class="city-tier">Expans&atilde;o</span>
+              </div>
+              <h3>Porto</h3>
+              <p>Abordagem intimista e premium, com foco em discri&ccedil;&atilde;o e proximidade.</p>
+              <ul class="city-points">
+                <li>Est&eacute;tica editorial contida</li>
+                <li>Acesso recorrente privilegiado</li>
+                <li>Eventos e drops exclusivos</li>
+              </ul>
+            </article>
+
+            <article class="city-card panel reveal">
+              <div class="city-card-head">
+                <span class="market-tag">Portugal</span>
+                <span class="city-tier">Sazonal</span>
+              </div>
+              <h3>Algarve</h3>
+              <p>Exclusividade sazonal, ambiente de luxo e p&uacute;blico que valoriza o premium.</p>
+              <ul class="city-points">
+                <li>Conte&uacute;do exclusivo e raro</li>
+                <li>Ofertas premium de acesso limitado</li>
+                <li>Edi&ccedil;&otilde;es especiais de ver&atilde;o</li>
+              </ul>
+            </article>
+
+            <article class="city-card panel reveal">
+              <div class="city-card-head">
+                <span class="market-tag">Brasil</span>
+                <span class="city-tier">Destaque</span>
+              </div>
+              <h3>S&atilde;o Paulo</h3>
+              <p>O maior mercado lus&oacute;fono. Energia urbana, acesso Pix e identidade paulistana.</p>
+              <ul class="city-points">
+                <li>Linguagem direta e envolvente</li>
+                <li>Packs de entrada acess&iacute;veis em R$</li>
+                <li>Upgrade simples para plano recorrente</li>
+              </ul>
+            </article>
+
+            <article class="city-card panel reveal">
+              <div class="city-card-head">
+                <span class="market-tag">Brasil</span>
+                <span class="city-tier">Destaque</span>
+              </div>
+              <h3>Rio de Janeiro</h3>
+              <p>Energia visual e acesso imediato com a identidade carioca.</p>
+              <ul class="city-points">
+                <li>Conte&uacute;do com narrativa local</li>
+                <li>Primeiro acesso sem complica&ccedil;&atilde;o</li>
+                <li>Checkout r&aacute;pido e otimizado para mobile</li>
+              </ul>
+            </article>
+
+            <article class="city-card panel reveal">
+              <div class="city-card-head">
+                <span class="market-tag">Europa</span>
+                <span class="city-tier">Internacional</span>
+              </div>
+              <h3>Londres &amp; Madrid</h3>
+              <p>P&uacute;blico lus&oacute;fono na Europa. Cart&atilde;o internacional e experi&ecirc;ncia premium.</p>
+              <ul class="city-points">
+                <li>Checkout internacional discreto</li>
+                <li>Conte&uacute;do premium para a di&aacute;spora</li>
+                <li>Acesso VIP com crypto dispon&iacute;vel</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="mercados" class="market-playbook">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Mercados</p>
+            <h2>Uma experi&ecirc;ncia adaptada ao teu mercado.</h2>
+            <p class="section-sub">
+              Conte&uacute;do, pre&ccedil;os e meios de pagamento pensados para onde est&aacute;s,
+              com a mesma qualidade premium em todo o lado.
+            </p>
+          </div>
+
+          <div class="market-switcher panel reveal">
+            <div class="market-tabs" role="tablist" aria-label="Mercados principais">
+              <button class="market-tab active" type="button" role="tab" data-market="pt" aria-selected="true">Portugal</button>
+              <button class="market-tab" type="button" role="tab" data-market="br" aria-selected="false">Brasil</button>
+              <button class="market-tab" type="button" role="tab" data-market="global" aria-selected="false">Global</button>
+            </div>
+
+            <div class="market-panel active" data-market-panel="pt">
+              <div class="market-panel-copy">
+                <span class="market-tag">PT</span>
+                <h3>Discri&ccedil;&atilde;o premium com identidade local</h3>
+                <p>Em Portugal, a experi&ecirc;ncia combina sofistica&ccedil;&atilde;o, proximidade e pagamento discreto.</p>
+              </div>
+              <div class="market-panel-grid">
+                <div class="market-detail">
+                  <strong>Cidades foco</strong>
+                  <span>Lisboa, Porto, Coimbra, Faro/Algarve</span>
+                </div>
+                <div class="market-detail">
+                  <strong>Teaser</strong>
+                  <span>15-20s editoriais, com contexto local</span>
+                </div>
+                <div class="market-detail">
+                  <strong>Entrada</strong>
+                  <span>Desde 9.90&euro; no primeiro passo</span>
+                </div>
+                <div class="market-detail">
+                  <strong>Pagamento</strong>
+                  <span>MB Way, Multibanco, cart&atilde;o internacional</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="market-panel" data-market-panel="br">
+              <div class="market-panel-copy">
+                <span class="market-tag">BR</span>
+                <h3>Acesso r&aacute;pido e sem complica&ccedil;&atilde;o</h3>
+                <p>No Brasil, tudo &eacute; direto: promessa clara, acesso imediato e pagamento simples via Pix.</p>
+              </div>
+              <div class="market-panel-grid">
+                <div class="market-detail">
+                  <strong>Cidades foco</strong>
+                  <span>S&atilde;o Paulo, Rio, BH, Curitiba, Bras&iacute;lia</span>
+                </div>
+                <div class="market-detail">
+                  <strong>Teaser</strong>
+                  <span>Curto e direto, com acesso imediato no telem&oacute;vel</span>
+                </div>
+                <div class="market-detail">
+                  <strong>Entrada</strong>
+                  <span>Desde R$19,90 para come&ccedil;ar</span>
+                </div>
+                <div class="market-detail">
+                  <strong>Pagamento</strong>
+                  <span>Pix na frente, cart&atilde;o como alternativa</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="market-panel" data-market-panel="global">
+              <div class="market-panel-copy">
+                <span class="market-tag">Global</span>
+                <h3>Experi&ecirc;ncia premium internacional</h3>
+                <p>Para o mercado internacional: acesso exclusivo, design premium e pagamento global.</p>
+              </div>
+              <div class="market-panel-grid">
+                <div class="market-detail">
+                  <strong>Cidades foco</strong>
+                  <span>Nova Iorque, Miami, Londres, Toronto, Sydney</span>
+                </div>
+                <div class="market-detail">
+                  <strong>Teaser</strong>
+                  <span>Editorial premium com est&eacute;tica cuidada</span>
+                </div>
+                <div class="market-detail">
+                  <strong>Entrada</strong>
+                  <span>Entrada acess&iacute;vel + membership VIP</span>
+                </div>
+                <div class="market-detail">
+                  <strong>Pagamento</strong>
+                  <span>Cart&atilde;o internacional e crypto</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="conversion-flow">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Como funciona</p>
+            <h2>Da curiosidade ao acesso completo, em 4 passos.</h2>
+            <p class="section-sub">
+              Entrada simples, sem press&atilde;o. Explora, experimenta e sobe de n&iacute;vel quando quiseres.
+            </p>
+          </div>
+
+          <div class="flow-grid">
+            <article class="flow-card panel reveal">
+              <span class="flow-step">01</span>
+              <h3>Explora o conte&uacute;do</h3>
+              <p>Descobre as cole&ccedil;&otilde;es, modelos e a est&eacute;tica que nos define.</p>
+            </article>
+
+            <article class="flow-card panel reveal">
+              <span class="flow-step">02</span>
+              <h3>Escolhe a tua entrada</h3>
+              <p>Pack avulso ou primeiro m&ecirc;s promocional &mdash; sem compromisso.</p>
+            </article>
+
+            <article class="flow-card panel reveal">
+              <span class="flow-step">03</span>
+              <h3>Paga como quiseres</h3>
+              <p>Pix, MB Way, cart&atilde;o internacional ou crypto &mdash; tudo discreto.</p>
+            </article>
+
+            <article class="flow-card panel reveal">
+              <span class="flow-step">04</span>
+              <h3>Acede e evolui</h3>
+              <p>Acesso imediato ao conte&uacute;do. Sobe para VIP quando estiveres pronto.</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- ========== MODELOS ========== -->
+        <section id="modelos" class="models">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Modelos</p>
+            <h2>Rostos que n&atilde;o se inventam.</h2>
+            <p class="section-sub">Cada modelo &eacute; cuidadosamente selecionada. Conte&uacute;do original, nunca antes publicado.</p>
+          </div>
+
+          <div class="model-showcase">
+            <article class="model-profile reveal">
+              <div class="model-gallery">
+                <div class="carousel model-carousel">
+                  <div class="carousel-track">
+                    <div class="carousel-slide active">
+                      <img src="images/janise-01.jpg" alt="Janise - Cole&ccedil;&atilde;o 01" width="600" height="800" loading="lazy" />
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="images/janise-02.jpg" alt="Janise - Cole&ccedil;&atilde;o 02" width="600" height="800" loading="lazy" />
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="images/janise-03.jpg" alt="Janise - Cole&ccedil;&atilde;o 03" width="600" height="800" loading="lazy" />
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="images/janise-04.jpg" alt="Janise - Cole&ccedil;&atilde;o 04" width="600" height="800" loading="lazy" />
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="images/janise-05.jpg" alt="Janise - Cole&ccedil;&atilde;o 05" width="600" height="800" loading="lazy" />
+                    </div>
+                  </div>
+
+                  <div class="carousel-badge">
+                    <span class="live-dot"></span> Top modelo
+                  </div>
+
+                  <button class="carousel-btn carousel-prev" aria-label="Anterior">&larr;</button>
+                  <button class="carousel-btn carousel-next" aria-label="Seguinte">&rarr;</button>
+                  <div class="carousel-dots"></div>
+                </div>
+
+                <div class="model-thumbs">
+                  <button class="model-thumb active" data-index="0"><img src="images/janise-01.jpg" alt="Miniatura 1" width="64" height="80" loading="lazy" /></button>
+                  <button class="model-thumb" data-index="1"><img src="images/janise-02.jpg" alt="Miniatura 2" width="64" height="80" loading="lazy" /></button>
+                  <button class="model-thumb" data-index="2"><img src="images/janise-03.jpg" alt="Miniatura 3" width="64" height="80" loading="lazy" /></button>
+                  <button class="model-thumb" data-index="3"><img src="images/janise-04.jpg" alt="Miniatura 4" width="64" height="80" loading="lazy" /></button>
+                  <button class="model-thumb" data-index="4"><img src="images/janise-05.jpg" alt="Miniatura 5" width="64" height="80" loading="lazy" /></button>
+                </div>
+              </div>
+
+              <div class="model-info panel">
+                <div class="model-info-header">
+                  <h3>Janise</h3>
+                  <p class="model-meta">23 anos &bull; Lisboa</p>
+                </div>
+                <p>Olhar que prende. Presen&ccedil;a que transforma cada enquadramento em desejo puro. A primeira musa de Lisboa Despida &mdash; eleg&acirc;ncia crua, sem filtros.</p>
+
+                <div class="model-stats">
+                  <div class="model-stat">
+                    <strong>127</strong>
+                    <span>Fotos</span>
+                  </div>
+                  <div class="model-stat">
+                    <strong>14</strong>
+                    <span>V&iacute;deos</span>
+                  </div>
+                  <div class="model-stat">
+                    <strong>4</strong>
+                    <span>Cole&ccedil;&otilde;es</span>
+                  </div>
+                  <div class="model-stat">
+                    <strong>4.9</strong>
+                    <span>Avalia&ccedil;&atilde;o</span>
+                  </div>
+                </div>
+
+                <div class="model-tags">
+                  <span class="pill">Noites de Lisboa</span>
+                  <span class="pill">Quartos Privados</span>
+                  <span class="pill">Editorial</span>
+                  <span class="pill pill-new">Nova cole&ccedil;&atilde;o</span>
+                </div>
+
+                <div class="model-cta-group">
+                  <a class="button button-primary" href="#membership">Acesso completo</a>
+                  <a class="button button-secondary" href="#packs">Comprar pack &mdash; 9.90&euro;</a>
+                </div>
+
+                <div class="model-tip">
+                  <p class="tip-label">Enviar tip &agrave; Janise</p>
+                  <div class="tip-buttons">
+                    <button class="tip-btn" data-amount="5">5&euro;</button>
+                    <button class="tip-btn" data-amount="10">10&euro;</button>
+                    <button class="tip-btn tip-btn-popular" data-amount="25">25&euro;</button>
+                    <button class="tip-btn" data-amount="50">50&euro;</button>
+                    <button class="tip-btn" data-amount="100">100&euro;</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ========== COLECOES ========== -->
+        <section id="colecoes" class="collections">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Cole&ccedil;&otilde;es</p>
+            <h2>Cada lan&ccedil;amento, um cap&iacute;tulo que se deseja.</h2>
+          </div>
+
+          <div class="collection-grid">
+            <article class="collection-card panel reveal">
+              <div class="collection-card-head">
+                <span>01</span>
+                <span class="pill pill-new">Novo</span>
+              </div>
+              <h3>Noites de Lisboa</h3>
+              <p>A cidade acende-se. Silhuetas contra a luz. Tens&atilde;o que se sente.</p>
+              <div class="collection-meta">
+                <span>32 fotos</span>
+                <span>&bull;</span>
+                <span>4 v&iacute;deos</span>
+              </div>
+              <a class="button button-secondary button-sm" href="#membership">Ver cole&ccedil;&atilde;o</a>
+            </article>
+            <article class="collection-card panel reveal">
+              <div class="collection-card-head">
+                <span>02</span>
+                <span class="pill pill-hot">Popular</span>
+              </div>
+              <h3>Quartos Privados</h3>
+              <p>Portas fechadas, len&ccedil;&oacute;is desfeitos e o sil&ecirc;ncio certo.</p>
+              <div class="collection-meta">
+                <span>48 fotos</span>
+                <span>&bull;</span>
+                <span>6 v&iacute;deos</span>
+              </div>
+              <a class="button button-secondary button-sm" href="#membership">Ver cole&ccedil;&atilde;o</a>
+            </article>
+            <article class="collection-card panel reveal">
+              <div class="collection-card-head">
+                <span>03</span>
+              </div>
+              <h3>Azulejo &amp; Pele</h3>
+              <p>Onde a textura de Lisboa toca a pele &mdash; cl&aacute;ssico e &iacute;ntimo.</p>
+              <div class="collection-meta">
+                <span>28 fotos</span>
+                <span>&bull;</span>
+                <span>3 v&iacute;deos</span>
+              </div>
+              <a class="button button-secondary button-sm" href="#membership">Ver cole&ccedil;&atilde;o</a>
+            </article>
+            <article class="collection-card panel reveal">
+              <div class="collection-card-head">
+                <span>04</span>
+                <span class="pill pill-locked">VIP</span>
+              </div>
+              <h3>Tejo Dourado</h3>
+              <p>Fim de tarde. Luz quente. Cinema que se vive, n&atilde;o se v&ecirc;.</p>
+              <div class="collection-meta">
+                <span>36 fotos</span>
+                <span>&bull;</span>
+                <span>5 v&iacute;deos</span>
+              </div>
+              <a class="button button-secondary button-sm" href="#membership">Apenas VIP</a>
+            </article>
+          </div>
+        </section>
+
+        <!-- ========== CONTENT PACKS (NEW REVENUE) ========== -->
+        <section id="packs" class="packs">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Packs Exclusivos</p>
+            <h2>Entra sem compromisso. Sobe quando quiseres.</h2>
+            <p class="section-sub">A porta de entrada para quem quer pagar uma vez, validar a qualidade e decidir com calma o pr&oacute;ximo passo.</p>
+          </div>
+
+          <div class="packs-grid">
+            <article class="pack-card panel reveal">
+              <div class="pack-badge">Mais vendido</div>
+              <div class="pack-image">
+                <img src="images/janise-01.jpg" alt="Pack Janise Essencial" width="600" height="800" loading="lazy" />
+              </div>
+              <div class="pack-info">
+                <h3>Janise &mdash; Essencial</h3>
+                <p>30 fotos + 2 v&iacute;deos curados</p>
+                <div class="pack-price">
+                  <span class="pack-price-old">24.90&euro;</span>
+                  <strong>9.90&euro;</strong>
+                </div>
+                <button class="button button-primary button-sm">Comprar agora</button>
+              </div>
+            </article>
+
+            <article class="pack-card panel reveal">
+              <div class="pack-badge pack-badge-vip">Premium</div>
+              <div class="pack-image">
+                <img src="images/janise-03.jpg" alt="Pack Janise Sem Limites" width="600" height="800" loading="lazy" />
+              </div>
+              <div class="pack-info">
+                <h3>Janise &mdash; Sem Limites</h3>
+                <p>127 fotos + 14 v&iacute;deos + bastidores</p>
+                <div class="pack-price">
+                  <span class="pack-price-old">89.90&euro;</span>
+                  <strong>39.90&euro;</strong>
+                </div>
+                <button class="button button-primary button-sm">Comprar agora</button>
+              </div>
+            </article>
+
+            <article class="pack-card panel reveal">
+              <div class="pack-image">
+                <img src="images/janise-05.jpg" alt="Pack Noites de Lisboa" width="600" height="800" loading="lazy" />
+              </div>
+              <div class="pack-info">
+                <h3>Cole&ccedil;&atilde;o &mdash; Noites</h3>
+                <p>32 fotos + 4 v&iacute;deos ambientais</p>
+                <div class="pack-price">
+                  <strong>14.90&euro;</strong>
+                </div>
+                <button class="button button-secondary button-sm">Comprar agora</button>
+              </div>
+            </article>
+
+            <article class="pack-card panel reveal">
+              <div class="pack-badge pack-badge-limited">Limitado</div>
+              <div class="pack-image">
+                <img src="images/janise-02.jpg" alt="Pack Behind the Scenes" width="600" height="800" loading="lazy" />
+              </div>
+              <div class="pack-info">
+                <h3>Bastidores Exclusivos</h3>
+                <p>V&iacute;deo exclusivo de 18 min + extras</p>
+                <div class="pack-price">
+                  <strong>19.90&euro;</strong>
+                </div>
+                <button class="button button-secondary button-sm">Comprar agora</button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ========== MEMBERSHIP ========== -->
+        <section id="membership" class="membership">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Membership</p>
+            <h2>Escolhe a forma certa de entrar.</h2>
+            <p class="section-sub">Sem fideliza&ccedil;&atilde;o, sem complica&ccedil;&atilde;o. Escolhe o plano que melhor se adapta a ti.</p>
+          </div>
+
+          <!-- BILLING TOGGLE -->
+          <div class="billing-toggle reveal">
+            <button class="billing-option active" data-billing="monthly">Mensal</button>
+            <button class="billing-option" data-billing="annual">
+              Anual
+              <span class="billing-save">Poupa 40%</span>
+            </button>
+          </div>
+
+          <div class="pricing-grid">
+            <article class="pricing-card panel reveal" data-tier="entry">
+              <p class="tier">Entry</p>
+              <h3>Private Pass</h3>
+              <div class="pricing-amount">
+                <strong class="price-monthly">19&euro;</strong>
+                <strong class="price-annual price-hidden">11&euro;</strong>
+                <span>/ m&ecirc;s</span>
+              </div>
+              <ul class="pricing-features">
+                <li>Galerias curadas (acesso parcial)</li>
+                <li>1 cole&ccedil;&atilde;o por m&ecirc;s</li>
+                <li>Newsletter exclusiva</li>
+                <li class="pricing-feature-locked">V&iacute;deos sem cortes</li>
+                <li class="pricing-feature-locked">Conte&uacute;do de bastidores</li>
+                <li class="pricing-feature-locked">Chat com modelos</li>
+              </ul>
+              <a class="button button-secondary" href="#newsletter">Come&ccedil;ar</a>
+            </article>
+
+            <article class="pricing-card pricing-featured panel reveal" data-tier="signature">
+              <div class="pricing-popular-badge">Mais popular</div>
+              <p class="tier">Signature</p>
+              <h3>Inner Circle</h3>
+              <div class="pricing-amount">
+                <strong class="price-monthly">49&euro;</strong>
+                <strong class="price-annual price-hidden">29&euro;</strong>
+                <span>/ m&ecirc;s</span>
+              </div>
+              <ul class="pricing-features">
+                <li>Tudo do Private Pass</li>
+                <li>Cole&ccedil;&otilde;es completas ilimitadas</li>
+                <li>V&iacute;deos sem cortes</li>
+                <li>Conte&uacute;do de bastidores exclusivo</li>
+                <li>Acesso antecipado 48h</li>
+                <li>Chat direto com modelos</li>
+                <li class="pricing-feature-locked">Eventos privados</li>
+              </ul>
+              <a class="button button-primary" href="#newsletter">Entrar agora</a>
+              <p class="pricing-guarantee">Garantia 7 dias &mdash; reembolso total</p>
+            </article>
+
+            <article class="pricing-card pricing-vip panel reveal" data-tier="vip">
+              <div class="pricing-vip-badge">VIP</div>
+              <p class="tier">VIP</p>
+              <h3>Private Concierge</h3>
+              <div class="pricing-amount">
+                <strong class="price-monthly">149&euro;</strong>
+                <strong class="price-annual price-hidden">89&euro;</strong>
+                <span>/ m&ecirc;s</span>
+              </div>
+              <ul class="pricing-features">
+                <li>Tudo do Inner Circle</li>
+                <li>Conte&uacute;do personalizado</li>
+                <li>Eventos privados VIP</li>
+                <li>Packs raros gr&aacute;tis</li>
+                <li>Prioridade em tudo</li>
+                <li>Concierge dedicado 24/7</li>
+                <li>Cr&eacute;dito mensal de 50&euro; em tips</li>
+              </ul>
+              <a class="button button-primary" href="#newsletter">Pedir acesso VIP</a>
+              <p class="pricing-guarantee">Apenas 50 vagas &mdash; <strong id="vipSpots">12</strong> restantes</p>
+            </article>
+          </div>
+
+          <!-- FOUNDING MEMBER BANNER -->
+          <div class="founding-banner panel reveal">
+            <div class="founding-content">
+              <div class="founding-badge">Founding Member &mdash; Edi&ccedil;&atilde;o Limitada</div>
+              <h3>Torna-te Founding Member e garante <span class="gold-text">40% para sempre</span></h3>
+              <p>Os primeiros 100 membros t&ecirc;m desconto vital&iacute;cio. Nunca mais pagar&aacute;s pre&ccedil;o cheio. <strong>J&aacute; s&oacute; restam <span id="foundingSpots">23</span> lugares.</strong></p>
+            </div>
+            <div class="founding-cta">
+              <a class="button button-primary button-lg" href="#newsletter">Garantir o meu lugar</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== EVENTOS PRIVADOS (NEW REVENUE) ========== -->
+        <section id="eventos" class="events">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Eventos Exclusivos</p>
+            <h2>Experi&ecirc;ncias que n&atilde;o se repetem.</h2>
+            <p class="section-sub">Lives privadas, sess&otilde;es de perguntas com modelos e eventos presenciais em Lisboa.</p>
+          </div>
+
+          <div class="events-grid">
+            <article class="event-card panel reveal">
+              <div class="event-date">
+                <span class="event-day">12</span>
+                <span class="event-month">ABR</span>
+              </div>
+              <div class="event-info">
+                <div class="event-type-badge">Live Privada</div>
+                <h3>Noite com Janise &mdash; Live Exclusiva</h3>
+                <p>Sess&atilde;o ao vivo com perguntas e respostas. Apenas 50 lugares.</p>
+                <div class="event-meta">
+                  <span>90 min</span>
+                  <span>&bull;</span>
+                  <span>38/50 lugares</span>
+                </div>
+              </div>
+              <div class="event-price">
+                <strong>29&euro;</strong>
+                <span>por pessoa</span>
+                <button class="button button-primary button-sm">Reservar</button>
+              </div>
+            </article>
+
+            <article class="event-card panel reveal">
+              <div class="event-date">
+                <span class="event-day">26</span>
+                <span class="event-month">ABR</span>
+              </div>
+              <div class="event-info">
+                <div class="event-type-badge event-type-presencial">Presencial</div>
+                <h3>Vernissage Lisboa Despida</h3>
+                <p>Exposi&ccedil;&atilde;o fotogr&aacute;fica privada no Bairro Alto. Bebidas inclu&iacute;das.</p>
+                <div class="event-meta">
+                  <span>Bairro Alto, Lisboa</span>
+                  <span>&bull;</span>
+                  <span>12/30 lugares</span>
+                </div>
+              </div>
+              <div class="event-price">
+                <strong>89&euro;</strong>
+                <span>por pessoa</span>
+                <button class="button button-primary button-sm">Reservar</button>
+              </div>
+            </article>
+
+            <article class="event-card event-card-vip panel reveal">
+              <div class="event-vip-ribbon">Apenas VIP</div>
+              <div class="event-date">
+                <span class="event-day">10</span>
+                <span class="event-month">MAI</span>
+              </div>
+              <div class="event-info">
+                <div class="event-type-badge event-type-vip">VIP Experience</div>
+                <h3>Jantar Privado + Sess&atilde;o Fotogr&aacute;fica</h3>
+                <p>Jantar exclusivo com modelo + sess&atilde;o fotogr&aacute;fica personalizada.</p>
+                <div class="event-meta">
+                  <span>Jantar gourmet</span>
+                  <span>&bull;</span>
+                  <span>3/8 lugares</span>
+                </div>
+              </div>
+              <div class="event-price">
+                <strong>349&euro;</strong>
+                <span>por pessoa</span>
+                <button class="button button-primary button-sm">Reservar</button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ========== TESTIMONIALS ========== -->
+        <section class="testimonials">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Testemunhos</p>
+            <h2>O que dizem os membros.</h2>
+          </div>
+
+          <div class="testimonials-grid">
+            <article class="testimonial-card panel reveal">
+              <div class="testimonial-stars">&starf;&starf;&starf;&starf;&starf;</div>
+              <p>&ldquo;N&atilde;o &eacute; mais um site. &Eacute; uma experi&ecirc;ncia. A qualidade das fotos e a est&eacute;tica s&atilde;o de outro n&iacute;vel.&rdquo;</p>
+              <div class="testimonial-author">
+                <span class="avatar" style="background: linear-gradient(135deg, #d2a45f, #6f1830);" aria-hidden="true">M</span>
+                <div>
+                  <strong>Marco R.</strong>
+                  <span>Inner Circle &bull; Membro h&aacute; 6 meses</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card panel reveal">
+              <div class="testimonial-stars">&starf;&starf;&starf;&starf;&starf;</div>
+              <p>&ldquo;O conte&uacute;do &eacute; t&atilde;o bom que passei do Private Pass para VIP em duas semanas. Vale cada c&ecirc;ntimo.&rdquo;</p>
+              <div class="testimonial-author">
+                <span class="avatar" style="background: linear-gradient(135deg, #182033, #d2a45f);" aria-hidden="true">P</span>
+                <div>
+                  <strong>Pedro L.</strong>
+                  <span>Private Concierge &bull; Membro h&aacute; 3 meses</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card panel reveal">
+              <div class="testimonial-stars">&starf;&starf;&starf;&starf;&starf;</div>
+              <p>&ldquo;Finalmente algo com classe. Nada vulgar, tudo com uma est&eacute;tica incr&iacute;vel. Os eventos presenciais s&atilde;o &uacute;nicos.&rdquo;</p>
+              <div class="testimonial-author">
+                <span class="avatar" style="background: linear-gradient(135deg, #a24f67, #182033);" aria-hidden="true">J</span>
+                <div>
+                  <strong>Jo&atilde;o S.</strong>
+                  <span>Inner Circle &bull; Membro h&aacute; 8 meses</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ========== REFERRAL PROGRAM ========== -->
+        <section class="referral reveal">
+          <div class="referral-panel panel">
+            <div class="referral-content">
+              <p class="eyebrow">Programa de Refer&ecirc;ncia</p>
+              <h2>Convida. Ganha. Repete.</h2>
+              <p>Por cada amigo que se torne membro, ganhas <strong class="gold-text">1 m&ecirc;s gr&aacute;tis</strong> + <strong class="gold-text">20% de comiss&atilde;o recorrente</strong> enquanto ele for membro.</p>
+              <div class="referral-stats">
+                <div class="referral-stat">
+                  <strong>347&euro;</strong>
+                  <span>M&eacute;dia mensal dos melhores afiliados</span>
+                </div>
+                <div class="referral-stat">
+                  <strong>20%</strong>
+                  <span>Comiss&atilde;o recorrente</span>
+                </div>
+                <div class="referral-stat">
+                  <strong>&infin;</strong>
+                  <span>Sem limite de convites</span>
+                </div>
+              </div>
+            </div>
+            <div class="referral-cta">
+              <a class="button button-primary button-lg" href="#newsletter">Quero o meu link</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== NEWSLETTER ========== -->
+        <section id="newsletter" class="newsletter reveal">
+          <div class="newsletter-panel panel">
+            <div>
+              <p class="eyebrow">Lista privada</p>
+              <h2>Entra na lista e recebe conte&uacute;do exclusivo.</h2>
+              <p>
+                Previews exclusivos, acesso antecipado e novidades
+                pensadas para quem valoriza qualidade e discri&ccedil;&atilde;o.
+              </p>
+              <div class="newsletter-bonus">
+                <p>Regista-te agora e recebe <strong class="gold-text">5 previews exclusivos</strong> de boas-vindas.</p>
+              </div>
+            </div>
+
+            <form class="newsletter-form">
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" autocomplete="email" placeholder="teu@email.com&hellip;" required />
+              </label>
+              <label>
+                <span>Nome (opcional)</span>
+                <input type="text" name="name" autocomplete="name" placeholder="O teu nome&hellip;" />
+              </label>
+              <button type="submit" class="button button-primary">Entrar na lista privada + 5 previews</button>
+              <small class="newsletter-privacy">Sem spam. Discreto. Cancela a qualquer momento.</small>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <!-- ========== FOOTER ========== -->
+      <footer class="site-footer reveal">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <span class="brand-mark">LD</span>
+            <div>
+              <strong>Lisboa Despida</strong>
+              <p>Onde Lisboa se despe em luxo.</p>
+            </div>
+          </div>
+          <div class="footer-links">
+            <div class="footer-col">
+              <h4>Explorar</h4>
+              <a href="#modelos">Modelos</a>
+              <a href="#colecoes">Cole&ccedil;&otilde;es</a>
+              <a href="#packs">Packs</a>
+              <a href="#eventos">Eventos</a>
+            </div>
+            <div class="footer-col">
+              <h4>Conta</h4>
+              <a href="#membership">Membership</a>
+              <a href="#newsletter">Lista Privada</a>
+              <a href="#">Login</a>
+            </div>
+            <div class="footer-col">
+              <h4>Legal</h4>
+              <a href="#">Termos de Uso</a>
+              <a href="#">Privacidade</a>
+              <a href="#">2257 Compliance</a>
+              <a href="#">Contacto</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Lisboa Despida. Todos os direitos reservados. Adulto 18+</p>
+          <div class="footer-payments">
+            <span class="payment-badge">Visa</span>
+            <span class="payment-badge">MC</span>
+            <span class="payment-badge">Crypto</span>
+            <span class="payment-badge">MB</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- ========== STICKY CTA (mobile) ========== -->
+    <div class="sticky-cta" id="stickyCta">
+      <a class="button button-primary button-lg sticky-cta-btn" href="#membership">
+        Tornar-me Membro &mdash; Desde 11&euro;/m&ecirc;s
+      </a>
+    </div>
+
+    <div class="activity-toast-region" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="three-scene.js"></script>
+  </body>
+</html>
